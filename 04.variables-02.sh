@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#Variables are nothing but a simple change in one location will effect everywhere autaomatically.
 #Variable syntax is VAR=DATA but here VAR=NAME and DATA=Hari
 #Var names are not mandatory to give capital we can give lower case as well.......
 
