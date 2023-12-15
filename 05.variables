@@ -1,5 +1,5 @@
 #!/bin/bash
 
-LIST:$(ls)
+LIST=$(ls)
 
 echo "To list files:$LIST"
