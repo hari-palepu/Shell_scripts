@@ -3,6 +3,7 @@
 #To pass arguments in shell we use special character called "$".
 #$1=It reads the First argument
 #$2=It reads the Second argument
+#We have to give the NAME during run time.
 NAME01=$1
 NAME02=$2
 
