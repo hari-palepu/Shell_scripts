@@ -6,7 +6,6 @@
 echo "Please enter your name"
 #The Linux read command is used to read the contents of a line into a variable
 read -s USERNAME  # The name entered above will be automatically attached to USERNAME variable. -s will hide the names in terminal
-$?
 #echo "The user name is: $USERNAME"
 
 echo "Please enter your password"
