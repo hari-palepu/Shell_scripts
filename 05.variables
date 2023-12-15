@@ -1,0 +1,5 @@
+#!/bin/bash
+
+LIST:$(ls)
+
+echo "To list files:$LIST"
