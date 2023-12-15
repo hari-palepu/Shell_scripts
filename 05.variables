@@ -2,4 +2,4 @@
 
 LIST=$(ls)
 
-echo "To list files:$LIST"
+echo "Below are the files in your directory: $LIST"
