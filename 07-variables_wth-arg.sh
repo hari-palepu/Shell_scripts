@@ -1,8 +1,10 @@
 #!/bin/bash
 
 #We use the arguments to  give passwords during run time instead of saving it in the file.
-#How to enter commands during run time.
+#How to enter commands during run time use "read" command. 
 
 echo "Please enter your name"
 #read command 
  read DATA # The name entered above will be automatically attached to USERNAME variable.
+
+ echo "$DATA"
