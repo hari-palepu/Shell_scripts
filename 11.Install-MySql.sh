@@ -13,7 +13,7 @@ fi #Reverse of if indicates ending of condition.
 #So we use exit status command to check previous command is success or not.
 #Shell script will store the command output in exit status and Command for exit status is $?
 
-yum install mysqll -y
+yum install mysql -y
 
 if [ $? = 0 ]
 then
