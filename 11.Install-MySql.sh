@@ -33,3 +33,5 @@ else
    echo "The installation is sucessful"
    fi
 
+#The above repeated code can be reduced using functions.
+
