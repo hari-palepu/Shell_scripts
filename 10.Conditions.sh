@@ -10,7 +10,7 @@
 
 NUMBER=$1
 
-if ( $NUMBER -ge 50 ){
+if [ $NUMBER -ge 50 ]{
     echo "The $NUMBER is greater than 50"
 }
 else {
