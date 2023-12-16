@@ -5,9 +5,9 @@ ID=$(id -u)
 VALIDATE(){
     if [ $1 = 0 ]
     then 
-      echo "Error $2...The Installation is Sucessful"    
+      echo "$2...Sucessful"    
     else
-      echo " $2...The installation is failed"
+      echo "$2...failed"
       exit 1
     fi
 }
