@@ -11,4 +11,4 @@ echo "All values: ${STATES[@]}"
 
 #Andhra will consider as 0
 #Karnataka as 1
-#Kerala as       2
+#Kerala as 2
