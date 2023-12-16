@@ -5,6 +5,7 @@ ID=$(id -u)
 if [ $ID != 0 ]
 then
  echo "Error: Pleae run as root user"
+ exit 1 # You can give other than 0
 else 
  echo "Suessful: You are a root user"
 fi #Reverse of if indicates ending of condition.
@@ -14,10 +15,21 @@ fi #Reverse of if indicates ending of condition.
 
 yum install mysqll -y
 
-if [ $! = 0 ]
+if [ $? = 0 ]
 then
    echo "The installation is sucessful"
 else
    echo "The installation is failed"
+   exit 1
 fi
+
+yum install git -y
+
+if [ $? -ne 0 ]
+then
+   echo "The installation is failed"
+   exit 1
+else
+   echo "The installation is sucessful"
+   fi
 
