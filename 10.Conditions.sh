@@ -1,20 +1,19 @@
 #!/bin/bash
 
 #if condition syntax
-#if(expression){
+#if [ expression ]
 #    Statement if expression is true
-#}
-#else {
+#else 
 #   Statement if expression is flase
-#}
+#fi
 
 NUMBER=$1
 
-if [ $NUMBER -ge 50 ]{
+if [ $NUMBER -ge 50 ]
+then 
     echo "The $NUMBER is greater than 50"
-}
-else {
+else 
     echo "The $NUMBER is less than 50"
-}
+fi
 
 
