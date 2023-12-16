@@ -18,6 +18,6 @@ if [ $? = 0 ]
 then
    echo "The installation is sucessful"
 else
-   echo "The command is failed"
+   echo "The installation is failed"
 fi
 
