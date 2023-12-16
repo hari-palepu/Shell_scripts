@@ -19,4 +19,5 @@ then
    echo "The installation is sucessful"
 else
    echo "The command is failed"
+fi
 
