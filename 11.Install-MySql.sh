@@ -14,7 +14,7 @@ fi #Reverse of if indicates ending of condition.
 
 yum install mysqll -y
 
-if [ $? = 0 ]
+if [ $! = 0 ]
 then
    echo "The installation is sucessful"
 else
