@@ -17,12 +17,15 @@ ID=$(id -u)
 echo "script name is $0"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
+
 LOGFILE="/tmp/$0-$TIMESTAMP.log" #Special variables will work in double quotes "". 
+
+echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
 VALIDATE(){
     if [ $1 = 0 ]
     then 
-      echo -e "$2...\e[31m Sucessful \e[0m"    
+      echo -e "$2...\e[32m Sucessful \e[0m"    
     else
       echo -e "$2...\e[31m failed \e[0m"
       exit 1
