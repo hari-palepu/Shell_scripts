@@ -2,6 +2,14 @@
 
 ID=$(id -u)
 
+if [ $ID != 0 ]
+then
+ echo "Error: Pleae run as root user"
+ exit 1 
+else 
+ echo "Suessful: You are a root user"
+fi
+
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
@@ -23,13 +31,7 @@ VALIDATE(){
     fi
 }
 
-if [ $ID != 0 ]
-then
- echo "Error: Pleae run as root user"
- exit 1 
-else 
- echo "Suessful: You are a root user"
-fi
+
 
 #echo "All arguments passed: $@"
 #git mysql net-tools tree
