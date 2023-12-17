@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-echo "script name ; $0"
+echo "script name is $0"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log" #Special variables will work in double quotes "". 
