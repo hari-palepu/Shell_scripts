@@ -22,7 +22,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log" #Special variables will work in double quotes "
 VALIDATE(){
     if [ $1 = 0 ]
     then 
-      echo "$2...\e[31m Sucessful"    
+      echo -e "$2...\e[31m Sucessful"    
     else
       echo "$2...failed"
       exit 1
