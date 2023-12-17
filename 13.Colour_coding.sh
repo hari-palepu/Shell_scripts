@@ -24,7 +24,7 @@ VALIDATE(){
     then 
       echo -e "$2...\e[31m Sucessful \e[0m"    
     else
-      echo "$2...\e[31m failed \e[0m"
+      echo -e "$2...\e[31m failed \e[0m"
       exit 1
     fi
 }
