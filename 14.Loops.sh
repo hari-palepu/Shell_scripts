@@ -16,10 +16,10 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "Script started at $TIMESTAMP" &>> $LOGFILE
 
-RED=\e[31m
-G=\e[32m
-Yel=\e[33m
-NORMAL=\e[0m
+RED="\e[31m"
+G="\e[32m"
+Yel="\e[33m"
+NORMAL="\e[0m"
 
 VALIDATE(){
     if [ $1 = 0 ]
