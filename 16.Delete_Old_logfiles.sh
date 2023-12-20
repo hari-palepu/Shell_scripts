@@ -1,6 +1,6 @@
 #!bin/bash
 
-SOURCE_DIR="/tmp/logs"
+SOURCE_DIR="/tmp/log"
 
 if [ ! -d $SOURCE_DIR ] # !=Not, -d=directory
 then 
