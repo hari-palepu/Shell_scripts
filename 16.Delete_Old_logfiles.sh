@@ -1,6 +1,6 @@
 #!bin/bash
 
-SOURCE_DIR="/tmp/shellscript-logs"
+SOURCE_DIR="/tmp/Logsfolder/"
 
 if [ ! -d $SOURCE_DIR ] # !=Not, -d=directory
 then 
