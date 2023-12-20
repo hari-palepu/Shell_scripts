@@ -11,7 +11,7 @@ FILES_TO_DELETE=$(find /tmp/logs -type f -mtime +14 -name "*.log") #To find 14da
 
 while IFS= read -r line #To read the del file output line by line IFS=Interal field seperator
 do 
- echo "Deleting file: $LINE"
+ echo "Deleting file: $line"
 
 done <<< $FILES_TO_DELETE
 
