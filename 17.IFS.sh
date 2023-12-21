@@ -9,9 +9,10 @@ fi
 
 FILES_TO_DELETE=$(find /tmp/logs/ -type f -mtime +1 -name "*.log") #To find 14days older files 
 
-while IFS="-" read -r line name id data
+while IFS=":" read -r line username password user_id group_id
 do 
- echo "Username;$name"
- echo "userid:$id"
- echo "data type:$data"
+ echo "Username;$username"
+ echo "password:$password"
+ echo "ID:$user_id"
+ ECHO "GroupID:$group_id
 done < $file
