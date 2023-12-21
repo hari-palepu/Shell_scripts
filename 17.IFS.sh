@@ -14,5 +14,5 @@ do
  echo "Username;$username"
  echo "password:$password"
  echo "ID:$user_id"
- ECHO "GroupID:$group_id"
+ echo "GroupID:$group_id"
 done < $file
