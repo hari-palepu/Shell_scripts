@@ -9,10 +9,10 @@ fi
 
 
 
-while IFS=":" read -r line username password user_id group_id
+while IFS=":" read -r  username password user_id group_id
 do 
- echo "Username;$username"
- echo "password:$password"
- echo "ID:$user_id"
- echo "GroupID:$group_id"
+  echo "Username: $username"
+  echo "password: $password"
+  echo "ID: $user_id"
+  echo "GroupID: $group_id"
 done < $file
