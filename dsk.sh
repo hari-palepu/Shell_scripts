@@ -1,22 +1,17 @@
-#!/bin/bash
+#!bin/bash
 
-DISK_USAGE=$(df -hT | grep -vE 'tmp|File') #-V will exclude the tmp and file names and prints rest
-DISK_THRESHOLD=1
-message=""
+SOURCE_DIR="/tmp/logs"
 
-while IFS= read line
+if [ ! -d $SOURCE_DIR ] # !=Not, -d=directory
+then 
+   echo "Source directory: $SOURCE_DIR doesn't exits"
+fi
+
+FILES_TO_DELETE=$(find /tmp/logs/ -type f -mtime +1 -name "*.log") #To find 14days older files 
+
+while IFS= read -r line #read -r line = To read the del file output line by line and IFS=Interal field seperator
 do 
- usage=$(echo $line | awk '{print $6}' | cut -d % -f1)
- partition=$(echo $line | awk '{print $1F}')
- if [ $usage -gt $DISK_THRESHOLD ]
-  then 
-     message+="High Disk Usage on $partition: $usage/n"
- fi
+ echo "Deleting file: $line"
+ rm -rf $line
+done <<< $FILES_TO_DELETE
 
-done <<< $DISK_USAGE
-
-echo -e "Message: $message"
-
-#echo "$message" | mail -s "High Disk Usage" crazyharee@gmail.com 
-
-#sh 20.Mail.sh "Hi Team" "High Disk Usage" "$message" "crazyharee@gmail.com" "Alert Recived On Disk Utilization"
