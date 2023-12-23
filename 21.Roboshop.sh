@@ -14,6 +14,6 @@ do
       INSTANCE_TYPE="t2.micro"
   fi
 
-  aws ec2 run-instances --image-id ami-03265a0778a880afb --count 1 --instance-type $INSTANCE_TYPE --security-group-ids sg-068f4d593bbb78b34 --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]"
+  aws ec2 run-instances --image-id ami-03265a0778a880afb --count 1 --instance-type $INSTANCE_TYPE --security-group-ids sg-068f4d593bbb78b34 --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]" --query 'Instances[0].PrivateIpAdress' --output text
 
 done
