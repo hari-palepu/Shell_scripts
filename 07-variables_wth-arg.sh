@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #We can use the arguments to  give passwords during run time instead of saving it in the file.
-#How to enter commands during run time use "read" command. 
+#How to pass arguments commands during run time use "read" command. 
 
 echo "Please enter your name"
 #The Linux read command is used to read the contents of a line into a variable
