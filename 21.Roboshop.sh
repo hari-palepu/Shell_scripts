@@ -2,7 +2,7 @@
 
 AMI=ami-03265a0778a880af
 SG_ID=sg-068f4d593bbb78b34
-INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalouge" "user" "cart" "shipping" "payment" "dispatch" "web")
+INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
 ZONE_ID=Z094511210F9S3HNW23BA #Replace with you zoneID
 DOMAIN_NAME=haripalepu.cloud
 
