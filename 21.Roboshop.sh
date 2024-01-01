@@ -3,7 +3,7 @@
 AMI=ami-03265a0778a880af
 SG_ID=sg-068f4d593bbb78b34
 INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
-ZONE_ID=Z094078830D8CG6RMFKG4 #Replace with you zoneID
+ZONE_ID=Z10480781CRO717CDH48S #Replace with you zoneID
 DOMAIN_NAME=haripalepu.cloud
 
 for i in "${INSTANCES[@]}"
